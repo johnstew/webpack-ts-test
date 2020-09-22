@@ -6,3 +6,9 @@ describe("isSuccess()", () => {
     expect(greatSuccess).toEqual(true);
   });
 });
+
+describe("hello()", () => {
+  it("should return a", () => {
+    expect(hello("a")).toEqual("a");
+  });
+});
