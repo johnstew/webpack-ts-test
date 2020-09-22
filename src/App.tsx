@@ -7,9 +7,15 @@ import {
 } from "@reduxjs/toolkit";
 import { Provider, useDispatch, useSelector } from "react-redux";
 
+import { Drawer, Sock } from "./utils";
+
 interface CounterState {
   value: number;
 }
+
+const sockDrawer = new Drawer<Sock>();
+sockDrawer.add({ color: "white" });
+console.log(sockDrawer);
 
 const fakeAsyncCall = (value: number) =>
   new Promise((resolve) => {

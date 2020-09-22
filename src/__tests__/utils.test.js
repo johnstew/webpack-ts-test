@@ -1,4 +1,4 @@
-import { isSuccess, hello } from "../utils";
+import { isSuccess, hello, Drawer, Sock, TShirt} from "../utils";
 
 describe("isSuccess()", () => {
   it("should return OK status", () => {
@@ -11,4 +11,21 @@ describe("hello()", () => {
   it("should return a", () => {
     expect(hello("a")).toEqual("a");
   });
+});
+
+describe('new Drawer()', () => {
+  it('should add and remove socks', () => {
+    const sockDrawer = new Drawer<Sock>();
+
+    sockDrawer.add({ color: "white" });
+    expect(sockDrawer.contents).toEqual([{ color: 'white' }]);
+    const mySock = sockDrawer.remove();
+    expect(sockDrawer.contents.length).toEqual(0);
+  });
+  
+  // it('should', () => {
+  //   const tshirtDrawer = new Drawer<TShirt>();
+  //   tshirtDrawer.add({ size: "m" });
+  //   const mixedDrawer = new Drawer<Sock | TShirt>();
+  // });
 });

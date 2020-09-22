@@ -13,7 +13,10 @@
         "@babel/preset-react",
         "@babel/preset-typescript"
       ],
-      "plugins": ["@babel/plugin-transform-runtime"]
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+      ]
     },
     "development": {
       "presets": [
@@ -29,7 +32,10 @@
         "@babel/preset-react",
         "@babel/preset-typescript"
       ],
-      "plugins": ["@babel/plugin-transform-runtime"]
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+      ]
     },
     "production": {
       "presets": [
@@ -45,7 +51,10 @@
         "@babel/preset-react",
         "@babel/preset-typescript"
       ],
-      "plugins": ["@babel/plugin-transform-runtime"]
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+      ]
     }
   }
 }

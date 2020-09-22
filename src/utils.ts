@@ -11,6 +11,26 @@ export function hello<T, X = void, Y = void>(a: T, b?: X, c?: Y): T | X | Y {
   return a;
 }
 
+export class Drawer<ClothingType> {
+  contents: ClothingType[] = [];
+
+  add(object: ClothingType) {
+    this.contents.push(object);
+  }
+
+  remove() {
+    return this.contents.pop();
+  }
+}
+
+export interface Sock {
+  color: string;
+}
+
+export interface TShirt {
+  size: "s" | "m" | "l";
+}
+
 /* End Type Playground */
 
 export default () => {
