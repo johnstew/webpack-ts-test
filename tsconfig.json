@@ -10,7 +10,8 @@
     "target": "es5",
     "allowJs": true,
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true
   },
   "include": ["./src/**/*"]
 }

@@ -1,31 +1,9 @@
-# empty-project
+# Webpack TS Test Repo
 
-Empty project.
+## Notes
 
-## Building and running on localhost
-
-First install dependencies:
-
-```sh
-npm install
-```
-
-To create a production build:
-
-```sh
-npm run build-prod
-```
-
-To create a development build:
-
-```sh
-npm run build-dev
-```
-
-## Running
-
-Open the file `dist/index.html` in your browser
-
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
+- [Namespaces](https://github.com/microsoft/TypeScript/issues/30994)
+- [React TS Cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
+- [Extending createAsyncThunk in TS](https://github.com/reduxjs/redux-toolkit/issues/486)
+- https://tsdx.io/
+- Type checking with ts-loader is slower for builds
