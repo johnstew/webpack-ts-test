@@ -7,11 +7,19 @@
           {
             "targets": {
               "node": "10.17.0"
-            }
+            },
+            "modules": "commonjs"
           }
         ],
         "@babel/preset-react",
-        "@babel/preset-typescript"
+        [
+          "@babel/preset-typescript",
+          {
+            "isTSX": true,
+            "allExtensions": true,
+            "jsxPragma": "react"
+          }
+        ]
       ],
       "plugins": [
         "@babel/plugin-transform-runtime",
@@ -30,7 +38,14 @@
           }
         ],
         "@babel/preset-react",
-        "@babel/preset-typescript"
+        [
+          "@babel/preset-typescript",
+          {
+            "isTSX": true,
+            "allExtensions": true,
+            "jsxPragma": "react"
+          }
+        ]
       ],
       "plugins": [
         "@babel/plugin-transform-runtime",
@@ -49,7 +64,14 @@
           }
         ],
         "@babel/preset-react",
-        "@babel/preset-typescript"
+        [
+          "@babel/preset-typescript",
+          {
+            "isTSX": true,
+            "allExtensions": true,
+            "jsxPragma": "react"
+          }
+        ]
       ],
       "plugins": [
         "@babel/plugin-transform-runtime",

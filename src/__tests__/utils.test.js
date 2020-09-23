@@ -22,10 +22,4 @@ describe('new Drawer()', () => {
     const mySock = sockDrawer.remove();
     expect(sockDrawer.contents.length).toEqual(0);
   });
-  
-  // it('should', () => {
-  //   const tshirtDrawer = new Drawer<TShirt>();
-  //   tshirtDrawer.add({ size: "m" });
-  //   const mixedDrawer = new Drawer<Sock | TShirt>();
-  // });
 });
